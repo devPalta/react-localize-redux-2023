@@ -1,3 +1,8 @@
+## 3.5.4 (February 28, 2023)
+
+- Update dependecies
+- important update - flat dep
+
 ## 3.5.3 (April 18, 2019)
 
 - Update typescript definition for onMissingTranslationFunction function

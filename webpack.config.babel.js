@@ -2,7 +2,6 @@ import webpack from 'webpack';
 import { resolve } from 'path';
 import ProgressBarPlugin from 'progress-bar-webpack-plugin';
 import { getIfUtils, removeEmpty } from 'webpack-config-utils';
-
 export default env => {
   const { ifProd, ifNotProd } = getIfUtils(env);
   const reactExternal = {
@@ -53,12 +52,6 @@ export default env => {
         minimize: true,
         debug: true
       })),
-      ifProd(new webpack.optimize.UglifyJsPlugin({
-        compress: {
-          screw_ie8: true,
-          warnings: false
-        }
-      }))
     ])
   }
 }
